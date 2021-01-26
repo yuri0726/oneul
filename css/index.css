@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@100;400;500;700&family=Noto+Sans+KR:wght@300;700;900&display=swap');
-
 * {
    margin: 0;
    padding: 0;
@@ -86,7 +84,7 @@ dl {
 .gnb_wrap {
    width: 100%;
    height: 130px;
-   background-color: rgba(255, 255, 255, 0.8);
+   background-color: rgba(255, 255, 255, 0);
    display: flex;
    justify-content: space-between;
    padding: 0 2.5%;
@@ -103,7 +101,7 @@ dl {
    font-family: 'Montserrat';
    font-size: 22px;
    letter-spacing: -0.55px;
-   color: black;
+   color: white;
    line-height: 22px;
    font-weight: 400;
 }
@@ -321,3 +319,505 @@ dl {
 .width_60p {
    width: 60%;
 }
+
+/* Main People CSS */
+.main_people_wrap {
+   width: 100%;
+   height: auto;
+   padding: 180px 0 0 0;
+}
+
+.main_people {
+   width: 1700px;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+
+.main_people_1 {
+   width: 824px;
+   height: 590px;
+   display: flex;
+}
+
+.main_people_1_img {
+   width: 470px;
+   height: 590px;
+   background-image: url(../img/mp_img01.jpg);
+}
+
+.main_people_1_text {
+   width: 420px;
+   height: 290px;
+   padding: 66px 0 0 66px;
+   margin: 310px 0 0 -45px;
+   background-color: white;
+}
+
+.main_people_position {
+   font-family: 'Montaga';
+}
+
+.main_people_name_ko {
+   font-size: 34px;
+   letter-spacing: -0.85px;
+   font-family: 'Noto Sans KR';
+}
+
+.main_people_name_en {
+   font-family: 'Montserrat';
+   font-size: 20px;
+   letter-spacing: -0.5px;
+   font-weight: 400;
+}
+
+.main_people_career {
+   display: flex;
+   align-items: center;
+   font-weight: 400;
+}
+
+.main_people_career_dot {
+   width: 4px;
+   height: 4px;
+   border-radius: 2px;
+   background-color: rgb(194,122,52);
+   margin: 0 10px 0 0;
+}
+
+.main_people_2 {
+   width: 876px;
+   height: 590px;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.main_people_2_img {
+   width: 470px;
+   height: 590px;
+   background-image: url(../img/mp_img02.jpg);
+}
+
+.main_people_2_text {
+   width: 420px;
+   height: auto;
+   padding: 66px 66px 66px 0;
+   margin: 244px -45px 0 0 ;
+   background-color: white;
+}
+
+.main_people_2 .main_people_career {
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+
+.main_people_2 .main_people_career_dot {
+   width: 4px;
+   height: 4px;
+   border-radius: 2px;
+   background-color:rgb(194,122,52);
+   margin: 0 0 0 10px; 
+}
+
+.main_people_3 {
+   width: 824px;
+   height: 590px;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.main_people_3_img {
+   width: 400px;
+   height: 500px;
+   background-image: url(../img/mp_img03.jpg);
+}
+
+.main_people_3_text {
+   width: 420px;
+   height: 290px;
+   padding: 66px 66px 66px 0;
+   margin: 220px -45px 0 0 ;
+   background-color: white;
+}
+
+.text_right {text-align: right;}
+
+.main_people_3 .main_people_career {display: flex; align-items: center; flex-direction: row-reverse;}
+
+.main_people_3 .main_people_career_dot { width: 4px; height: 4px; border-radius: 2px; background-color:rgb(194,122,52); margin: 0 0 0 10px; }
+
+
+/* .main_people_1 {
+   width: 824px;
+   height: 590px;
+   position: relative;
+}
+
+.main_people_1_img {
+   width: 470px;
+   height: 590px;
+   background-image: url(../img/mp_img01.jpg);
+}
+
+.main_people_1_text {
+   width: 420px;
+   height: 290px;
+   padding: 66px 0 0 66px;
+   background-color: white;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+}
+
+.main_people_position {
+   font-family: 'Montaga';
+}
+
+.main_people_name_ko {
+   font-size: 34px;
+   letter-spacing: -0.85px;
+   font-family: 'Noto Sans KR';
+}
+
+.main_people_name_en {
+   font-family: 'Montserrat';
+   font-size: 20px;
+   letter-spacing: -0.5px;
+   font-weight: 400;
+}
+
+.main_people_career {
+   display: flex;
+   align-items: center;
+   font-weight: 400;
+}
+
+.main_people_career_dot {
+   width: 4px;
+   height: 4px;
+   border-radius: 2px;
+   background-color: rgb(194,122,52);
+   margin: 0 10px 0 0;
+} */
+
+/* Main Room CSS */
+.main_room_wrap {
+   width: 100%;
+   height: auto;
+   padding: 200px 0;
+}
+
+.main_room {
+   width: 1720px;
+   height: auto;
+   margin: 0 auto;
+   display: flex;
+   color: white;
+   text-align: center;
+}
+
+.main_room_li {
+   width: 269px;
+   height: 620px;
+   margin: 0 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+}
+
+.main_room li:nth-child(1) {
+   background-image: url(../img/mh_img01_bg.jpg);
+}
+.main_room li:nth-child(2) {
+   background-image: url(../img/mh_img02_bg.jpg);
+}
+.main_room li:nth-child(3) {
+   background-image: url(../img/mh_img03.jpg); width: 820px;
+}
+.main_room li:nth-child(4) {
+   background-image: url(../img/mh_img04_bg.jpg);
+}
+
+.main_room_li p:nth-child(1) {
+   font-size: 22px;
+   letter-spacing: -0.55px;
+}
+
+.main_room_li h2 {
+   font-size: 26px;
+   font-weight: 400;
+   letter-spacing: -0.65px;
+}
+.main_room li:nth-child(3) h2 {
+   font-size: 50px;
+   margin: 0 0 10px 0;
+}
+
+.main_room_more {
+   position: absolute;
+   bottom: 35px;
+   right: 35px;
+   font-weight: 400;
+}
+
+/* Main Insta CSS */
+
+.main_insta_wrap {
+   width: 100%;
+   height: auto;
+   padding: 120px 0;
+   background-color: rgb(245,245,245);
+}
+
+.main_insta {
+   width: 1720px;
+   height: auto;
+   margin: 0 auto;
+   display: flex;
+   text-align: center;
+   flex-wrap: wrap;
+}
+
+.main_insta li {
+   width: 410px;
+   height: 410px;
+   margin: 10px 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.main_insta li:nth-child(2) {
+   background-image: url(../img/1.jpg);
+}
+.main_insta li:nth-child(3) {
+   background-image: url(../img/2.jpg);
+}
+.main_insta li:nth-child(4) {
+   background-image: url(../img/3.jpg);
+}
+.main_insta li:nth-child(5) {
+   background-image: url(../img/4.jpg);
+}
+.main_insta li:nth-child(6) {
+   background-image: url(../img/5.jpg);
+}
+.main_insta li:nth-child(7) {
+   background-image: url(../img/6.jpg);
+}
+.main_insta li:nth-child(8) {
+   background-image: url(../img/7.jpg);
+}
+
+.main_insta li img {
+   width: 135px;
+}
+
+.main_insta li a {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+/* Main Contact CSS */
+.main_contact_wrap {
+   width: 100%;
+   height: 793px;
+   display: flex;
+}
+
+.main_contact {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.main_contact_location {
+   position: absolute;
+   top: 300px;
+   left: 330px;
+}
+
+.main_contact_location img {
+   width: 90px;
+}
+
+.main_contact_info {
+   position: absolute;
+   top: 140px;
+   right: 102.5px;
+   width: 850px;
+   height: 513px;
+   background-color: white;
+   display: flex;
+}
+
+.main_contact_info_left {
+   background-image: url(../img/mi_bg.jpg);
+   width: 255px;
+}
+
+.main_contact_info_left div {
+   background-color: rgb(194, 122, 52);
+   width: 117px;
+   height: 117px;
+   text-align: center;
+   padding: 30px 0 0 0;
+   color: white;
+}
+
+.main_contact_info_left img {
+   width: 30px;
+   height: 30px;
+}
+
+.main_contact_info_right {
+   width: 595px;
+   padding: 60px 60px 20px 60px;
+}
+
+.main_contact_info_subtitle {
+   letter-spacing: -0.4px;
+   font-weight: 400;
+}
+
+.main_contact_info_title {
+   font-size: 34px;
+   letter-spacing: -0.85px;
+   font-weight: 400;
+}
+
+.main_contact_info_address {
+   font-size: 18px;
+   font-weight: 400;
+}
+
+.main_contact_info_search {
+   font-weight: 300;
+}
+
+.main_contact_info_phone {
+   border-top: 1px solid rgba(0,0,0,0.3);
+   display: flex;
+   padding: 20px 0;
+   margin:  20px 0 0 0;
+   align-items: center;
+}
+
+.main_contact_info_phone img {
+   width: 30px;
+   height: 30px;
+}
+
+.main_contact_info_phone p:nth-child(2) {
+   margin: 0 20px;
+   font-weight: 300;
+}
+
+.main_contact_info_phone p:nth-child(3) {
+   font-weight: 300;
+}
+
+.main_contact_info_phone span {
+   color: rgb(194, 122, 52);
+}
+
+.main_contact_info_opentime {
+   border-top: 1px solid rgba(0,0,0,0.3);
+   display: flex;
+   padding: 20px 0;
+   align-items: center;
+}
+
+.main_contact_info_opentime img {
+   width: 30px;
+   height: 30px;
+}
+
+.main_contact_info_opentime p:nth-child(2) {
+   margin: 0 0 0 20px;
+   font-weight: 300;
+}
+
+.main_contact_info_right span {
+   font-family: 'Montaga';
+   font-size: 18px;
+   color: rgb(194, 122, 52);
+   font-weight: 400;
+}
+
+
+
+/* Footer CSS */
+footer {
+   width: 100%;
+   padding: 60px 0;
+   background-color: rgb(56,52,49);
+}
+
+.footer_ul {
+   width: 1700px;
+   display: flex;
+   margin: 0 auto;
+}
+
+.footer_li_left {
+   width: 400px;
+}
+
+.footer_li_center {
+   width: 900px;
+}
+.footer_li_center p:nth-child(1) {
+   color: rgb(206,192,181);
+}
+.footer_li_center p:nth-child(2) {
+   color: rgb(170,152,138);
+}
+.footer_li_center p:nth-child(3) {
+   color: rgb(120,102,89);
+}
+
+.footer_li_right {
+   width: 400px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+}
+
+.footer_a_final {
+   height: 50px;
+   margin: 0 20px 0 0;
+}
+.footer_a_insta {
+   width: 50px;
+   height: 50px;
+   margin: 0 20px 0 0;
+   background-color: rgba(85,81,77);
+   border-radius: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer_a_family {
+   width: 200px;
+   height: 50px;
+   padding: 0 45px;
+   background-color: rgb(194, 122, 52);
+   border-radius: 25px;
+}
+
+.footer_a_family p {
+   line-height: 50px;
+   color: white;
+   font-size: 18px;
+   font-weight: 400;
+}
+

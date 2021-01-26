@@ -4,8 +4,37 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="레스토랑 오늘 홈페이지">
+   <meta name="keywords" content="맛집, 한식, Korean Food, Gangnam">
+   <meta name="author" content="행복에프엔씨재단">
    <title>레스토랑 오늘</title>
    <link rel="stylesheet" href="css/index.css">
+
+   <script>
+      function gnbOver() {
+         document.getElementById('gnb').style = "background-color:white;";
+
+         for (i=0; i<6; i++) {
+         document.getElementsByClassName('gnb_menu_a')[i].style = "color:black;"}
+
+         document.getElementById('gnb_logo_main').src = "img/logo.png";
+
+         document.getElementById('gnb_hiddenmenu_main').src = "img/icon_menu.png";
+
+      }
+
+      function gnbOut() {
+         document.getElementById('gnb').style = "background-color:rgba(0,0,0,0);";
+
+         for (i=0; i<6; i++) {
+         document.getElementsByClassName('gnb_menu_a')[i].style = "color:white;"}
+
+         document.getElementById('gnb_logo_main').src = "img/logo_on.png";
+
+         document.getElementById('gnb_hiddenmenu_main').src = "img/icon_menu_main.png";
+
+      }
+   </script>
 </head>
 
 <body>
@@ -14,11 +43,11 @@
       <!-- GNB란 Global Navigation Bar의 약자 -->
 
       <!-- 데스크탑 화면 GNB -->
-      <div class="gnb_wrap">
+      <div class="gnb_wrap" id="gnb" onmouseover="gnbOver()" onmouseout="gnbOut()">
 
          <!-- gnb 로고 부분 -->
-         <div class="gnb_logo" alt="레스토랑 오늘 로고">
-            <img class="gnb_logo_img" src="img/logo.png">
+         <div class="gnb_logo">
+            <img class="gnb_logo_img" id="gnb_logo_main" src="img/logo_on.png" alt="레스토랑 오늘 로고">
          </div>
 
          <!-- gnb 메뉴 부분 -->
@@ -33,7 +62,7 @@
 
          <!-- gnb 히든 메뉴 부분 -->
          <div class="gnb_hiddenmenu">
-            <img class="gnb_hiddenmenu_btn" src="img/icon_menu.png" alt="히든 메뉴 버튼">
+            <img class="gnb_hiddenmenu_btn" id="gnb_hiddenmenu_main" src="img/icon_menu_main.png" alt="히든 메뉴 버튼">
          </div>
 
       </div>
@@ -73,7 +102,7 @@
 
             <div class="main_info_text">
                <h5 class="c_point">Restaurant o'neul</h5>
-               <h2 class="margin_b_50">o'neul Value</h1>
+               <h2 class="margin_b_50">o'neul Value</h2>
                <p class="margin_b_20">레스토랑 오늘에서 선보이는 우리 음식은<br>
                   한국인의 정체성을 담고 있는 한식에 기반을 두고 있으며,<br>
                   우리 식 문화의 정통성을 지켜나가고 발전시켜 나가기 위해<br>
@@ -172,9 +201,219 @@
 
       </div>
 
+      <!-- Main PeoPle -->
+      <div class="main_people_wrap">
+
+         <div class="main_people">
+
+            <div class="main_people_1">
+
+               <div class="main_people_1_img"></div>
+
+               <div class="main_people_1_text">
+                  <h3 class="main_people_position c_point margin_b_10">Head Chef</h3>
+                  <h2 class="main_people_name_ko margin_b_10"><strong>김준식</strong> 쉐프</h2>
+                  <h4 class="main_people_name_en margin_b_20">Kim Junsik</h4>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">前 쉐라톤그랜드워커힐 레스토랑 헤드쉐프</p>
+                  </div>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">쉐라톤그랜드워커힐 R&D 센터 Sous Chef</p>
+                  </div>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">Banquet Operation & VVIP Banquet 전담</p>
+                  </div>
+               </div>
+
+            </div>
+
+            <div>
+               <h5 class="c_point text_right">Restaurant o'neul</h5>
+               <h2 class="text_right margin_b_50">o'neul people</h2>
+               <div class="main_people_2">
+                  <div class="main_people_2_img"></div>
+
+                  <div class="main_people_2_text">
+                     <h3 class="main_people_position c_point margin_b_10 text_right">Director Chef</h3>
+                     <h2 class="main_people_name_ko margin_b_10 text_right"><strong>하영철</strong> 쉐프</h2>
+                     <h4 class="main_people_name_en margin_b_20 text_right">Ha Yeongcheol</h4>
+                     <div class="main_people_career">
+                        <div class="main_people_career_dot"></div>
+                        <p class="main_people_career_text">SK NEW SCHOOL 교장</p>
+                     </div>
+                     <div class="main_people_career">
+                        <div class="main_people_career_dot"></div>
+                        <p class="main_people_career_text">행복에프엔씨재단 식문화 사업본부 고문</p>
+                     </div>
+                     <div class="main_people_career">
+                        <div class="main_people_career_dot"></div>
+                        <p class="main_people_career_text">前 쉐라톤그랜드워커힐 총주방장</p>
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div class="main_people_3">
+
+               <div class="main_people_3_img"></div>
+
+               <div class="main_people_3_text">
+                  <h3 class="main_people_position c_point margin_b_10 text_right">Service Team</h3>
+                  <h2 class="main_people_name_ko margin_b_10 text_right"><strong>이재석</strong> 지배인</h2>
+                  <h4 class="main_people_name_en margin_b_20 text_right">Lee Jaeseok</h4>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">WSET Advance certificate 자격증보유</p>
+                  </div>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">보르도 와인 마스터 코스 CIVB 수료</p>
+                  </div>
+                  <div class="main_people_career">
+                     <div class="main_people_career_dot"></div>
+                     <p class="main_people_career_text">SCAE 바리스타 국제자격증 보유</p>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <!-- Main Room -->
+      <div class="main_room_wrap">
+
+         <ul class="main_room">
+
+            <li class="main_room_li">
+               <p>1F</p>
+               <h2>Reception</h2>
+            </li>
+
+            <li class="main_room_li">
+               <p>2F</p>
+               <h2>Private Dining Room</h2>
+            </li>
+
+            <li class="main_room_li">
+               <p>3F</p>
+               <h2>Hall</h2>
+               <p>레스토랑 오늘 3층은 야외 중정을 사이에 두고<br>
+                  2가지 스타일의 다이닝 홀이 있습니다.</p>
+               <p class="main_room_more">more &rarr;</p>
+            </li>
+
+            <li class="main_room_li">
+               <p>Banquet/Party</p>
+               <h2>Dining events</h2>
+            </li>
+
+         </ul>
+
+      </div>
+
+      <!-- Main Insta -->
+      <div class="main_insta_wrap">
+
+         <ul class="main_insta">
+
+            <li>
+               <img src="img/mis_insta.png">
+               <p>www.instagram.com<br>
+                  /oneul_restaurant/</p>
+               <a href="http://www.instagram.com/oneul_restaurant/"></a>
+            </li>
+
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+            <li><a href="http://www.instagram.com/oneul_restaurant/"></a></li>
+
+         </ul>
+
+      </div>
+
+      <!-- Main Contact -->
+      <div class="main_contact_wrap">
+         <div class="main_contact">
+            <a href="https://map.kakao.com/?urlX=502067&urlY=1118637&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="1920" height="793" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=5&MX=502067&MY=1118637&S=0&IW=1920&IH=793&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+
+            <div class="main_contact_location">
+               <img src="img/pin.png">
+            </div>
+
+            <div class="main_contact_info">
+               <div class="main_contact_info_left">
+                  <div>
+                     <img src="img/icon_reservation.png">
+                     <p>Reservation</p>
+                  </div>
+               </div>
+               <div class="main_contact_info_right">
+                  <p class="main_contact_info_subtitle">레스토랑 오늘</p>
+                  <h2 class="c_point margin_b_20 main_contact_info_title">Restaurant o'neul</h2>
+                  <p class="margin_b_10 main_contact_info_address">04393 서울시 용산구 장문로 60(동빙고동 1-54)<br>
+                  60 Jangmun-ro, Youngsan-gu, Seoul, Korea</p>
+
+                  <p class="main_contact_info_search">- 네비게이션 검색 시 : 동빙고동 1-54<br>
+                  - 레스토랑 오늘 레드부스를 찾아주세요. (발렛 무료)</p>
+                  
+                  <div class="main_contact_info_phone">
+                     <img src="img/icon_tel.png">
+                     <p><span>Reservation</span><br>
+                        (+82) 02-792-1054
+                     </p>
+                     <p><span>Marketing & Promotion</span><br>
+                        (+82) 02-6445-5581
+                     </p>
+                  </div>
+                  <div class="main_contact_info_opentime">
+                     <img src="img/icon_time.png">
+                     <p><span>Luncheon</span> : 12:00 ~ 15:00&nbsp;&nbsp;
+                        <span>Dinner</span> : 18:00 ~ 22:00<br>
+                        <span>Last order</span> : 20:00(일요일 휴무, Closed on Sunday)
+                     </p>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
    </main>
 
-   <!-- <footer>사이트 주소, 연락처</footer> -->
+   <footer>
+
+      <ul class="footer_ul">
+         <li class="footer_li_left">
+            <img src="img/logo_f.png">
+         </li>
+         <li class="footer_li_center">
+            <p>레스토랑 오늘은 한식문화의 가치를 연구하고 특별한 경험을 소개하기 위해<br>
+               행복에프앤씨재단에서 운영하는 한식 다이닝 레스토랑입니다.</p>
+            <p class="margin_b_20">O'neul is a Korean dining restaurant operated by Happy F&C Foundation that strives
+               to<br>
+               research true values of Korean food culture and spread its unique and special experience.</p>
+            <p>Copyright © 2020 The Happiness food and culture foundation all right reserved.</p>
+         </li>
+         <li class="footer_li_right">
+            <a href="#" class="footer_a_final"><img src="img/restaurantoneul_finalist.png"></a>
+            <a href="#" class="footer_a_insta"><img src="img/insta.png"></a>
+            <a href="#" class="footer_a_family">
+               <p>Family Site&nbsp;▽</p>
+            </a>
+         </li>
+      </ul>
+
+   </footer>
 
 </body>
 
